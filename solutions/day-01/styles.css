@@ -1,0 +1,67 @@
+      /* == General style === */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+        padding: 25px;
+      }
+      
+      h1 {
+        font: 56px 'Raleway', sans-serif, '600';
+        color: rgb(52, 0, 107);
+      }
+      h2 {
+        font: 48px 'Trirong', serif, '400';
+        font-style: italic;
+        color:rgb(40, 40, 40);
+      }
+      h3 {
+        font: 36px 'Trirong', serif, '300';
+        color: rgb(40, 40, 40);
+      }
+    li {
+        list-style-type: none;
+        font: 18px 'Hind Siliguri', serif, '300';
+        color: rgb(40, 40, 40);
+    }
+    .mainWrapper {
+        background-color: rgb(255, 245, 106, .3);
+        padding: 0 20px 20px 20px;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(12, 165, 165, .5);
+    }
+    footer li {
+        font-size: 16px;
+    }
+    .footerWrapper {
+        width: 50%;
+        border: 1px solid;
+        padding: 20px;
+    }
+    .left-col {
+        display: inline-block;
+        width: 200px;
+    }
+    .right-col {
+        display: inline-block;
+        width: 50%;
+    }

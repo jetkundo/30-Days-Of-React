@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="initial-scale=1.0"/>
+        <title>Exercises</title>
+        <!--Google Fonts Block-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Raleway:wght@500;600&family=Trirong:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+        <!--Google Fonts Block End-->
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="root"></div>
+        
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            // To get the root element from the HTML document
+            const rootElement = document.querySelector('.root')
+            //Start the code here:
+            const companyName = "Thai Visa Easy"
+            const companySlogan = "Easy Way To Live in Thailand"
+            let companyServices = [];
+            companyServices.push("Long-term visas")
+            companyServices.push("Thailand Elite privilege cards")
+            companyServices.push("BOI certification")
+            companyServices.push("Business relocation")
+            companyServices.push("Expat family adaptation")
+            const currentYear = new Date().getFullYear()
+            const startingYear = 2020
+            const companyTeam = {
+                companyCeo: "Alina Lysenko",
+                companyMarketingDirector: "Constantine Kundel",
+                companyTechLead: "Julius Mitkevich",
+                companyOwner: "King Rama X",
+            }
+            const header = (
+                <header>
+                    <div className = "headerwrapper">
+                        <h1>{companyName}</h1>
+                        <h2>{companySlogan}</h2>
+                    </div>
+                </header>
+                )
+            const companyServicesFormatted = companyServices.map((companyService) => <li key={companyService}>{companyService}</li>)
+            const main = (
+                <main>
+                    <div className="mainWrapper">
+                        <h3>Our company services:</h3>
+                        <ul>{companyServicesFormatted}</ul>
+                        <p>{currentYear - startingYear} years of experence!</p>
+                    </div>
+                    
+                </main>
+            )
+            const footer = (
+                <footer>
+                    <div className = "footerWrapper container">
+                        <p>Our team:</p>
+                        <div className="left-col">
+                        <ul>
+                            <li>CEO:</li>
+                            <li>Marketing:</li>
+                            <li>Coding:</li>
+                            <li>Owner:</li>
+                        </ul>
+                    </div>
+                        <div className="right-col">
+                        <ul>
+                            <li>{companyTeam.companyCeo}</li>
+                            <li>{companyTeam.companyMarketingDirector}</li>
+                            <li>{companyTeam.companyTechLead}</li>
+                            <li>{companyTeam.companyOwner}</li>
+                        </ul>
+                        </div>
+                    </div>
+                </footer>
+            )
+
+       // JSX element, app
+      const app = (
+        <div className='app'>
+          {header}
+          {main}
+          {footer}
+        </div>
+      )
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement)
+        </script>
+    </body>
+</html>
