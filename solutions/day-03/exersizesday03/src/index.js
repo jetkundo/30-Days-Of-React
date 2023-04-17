@@ -31,9 +31,36 @@ const subscribeForm = (
   </div>
 );
 //user-card
+const user = {
+  name: "Assabeneh Yetayen",
+  country: "Finland",
+  position: "Senior Developer",
+  skills: ["HTML", "CSS", "Sass", "JS", "React", "Redux", "Node", "MongoDB", "Python", "Flask", "Django",
+"NumPy", "Pandas", "Data Analysis", "MySQL", "GraphQL", "D3.js", "Gatsby", "Docker", "Heroku", "Git"],
+  datejoined: "20 Aug 2020"
+}
+//const userName = "Assabeneh Yetayen"
+//const userPosition = "Senior Developer"
+//const userCountry = "Finland"
 const userCard = (
   <div className="userCardWrapper">
-    <img src="./src/images/Asabebeh.jpg" alt="Asabeneh"/>
+    <div className="userCardHeader">
+      <img className="userPhoto" src="./Asabebeh.jpg" alt="Asabeneh"/>
+        <div class="verifiedUser">
+          <h2>{user.name}</h2>
+          <img className="verifyMark" src="./logo192.png" alt="React Logo" style={{ width: '30px', height: '30px' }}/>
+        </div>
+        <p style={{ paddingBottom: '10px', }}>{user.position}, {user.country}</p>
+    </div>
+    <div className="skills">
+      <h3>SKILLS</h3>
+      <ul>{user.skills.map((skill) => <li key={skill}>{skill}</li>)}</ul>
+    </div>
+    <div className="joinDate">
+      <img src="./logo192.png" alt="React Logo" style={{ width: '15px', height: '15px' }}/>
+      <h6>Joined on {user.datejoined}</h6>
+    </div>
+    
   </div>
 )
 
