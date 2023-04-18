@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./index.css";
-import asabenehImage from './logo192.png';
 
 // JSX element, header
 
