@@ -1,0 +1,21 @@
+.coloredBlock {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1%;
+}
+.coloredBlock:last-child {
+	margin-bottom: 0;
+}
+.coloredBlock p {
+	text-shadow: 1px 1px 1px black;
+	font: bold 24px "Montserrat", sans-serif;
+	color: white;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.blocksSection {
+	margin: auto;
+	margin-top: 20px;
+	min-width: 500px;
+}

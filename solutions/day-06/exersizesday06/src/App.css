@@ -1,0 +1,60 @@
+.App {
+  text-align: left;
+}
+
+.numberedBlocks {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.numberedBlock {
+	width: 140px;
+	height: 120px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 5px 5px 5px;
+	text-align: center;
+  }
+  
+  .numberedBlock p {
+	color: white;
+	font: bold 26pt "Montserrat", sans-serif;
+	margin: 0;
+	text-shadow: 1px 1px 3px #444;
+  }
+  /*countries*/
+  .countryList {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+  }
+  .countryWrapper {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-width: 600px;
+	align-items: center;
+  }
+  .countryWrapper div {
+	display: inline-flex;
+  }
+  .countryName {
+	width: 10%;
+	min-width: 120px;
+	justify-content: flex-start;
+  }
+  .populationBarWrapper {
+	width: 80%;
+	height: 100%;
+	align-items: center;
+  }
+  .populationBar {
+	height: 30px;
+	background-color: green;
+	border-radius: 4px;
+  }
+  .countryPopulation {
+	width: 10%;
+	justify-content: flex-end;
+  }
